@@ -1,0 +1,27 @@
+{
+  "name": "purifier.js",
+  "version": "0.0.0",
+  "homepage": "http://purifier-js.herokuapp.com",
+  "author": "ishmaelthedestroyer",
+  "engines": {
+    "node": "0.10.15"
+  },
+  "description": "HTML editor using Bootstrap 3.0 and Font Awesome.",
+  "main": "./js/taylor.js",
+  "repository": "https://github.com/ishmaelthedestroyer/purifier.js",
+  "keywords": [
+    "markdown",
+    "bootstrap"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "devDependencies": {
+  }
+}

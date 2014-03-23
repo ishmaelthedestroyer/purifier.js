@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Purifier.js</title>
+  <link media='screen' rel='stylesheet' href='../example/assets/vendor/bootstrap/dist/css/bootstrap.css' />
+  <link media='screen' rel='stylesheet' href='../example/assets/css/example.css' />
+</head>
+<body>
+
+<div class='container header NO-PURIFY'>
+  <div class='row NO-PURIFY'>
+    <div class='clear-50'></div>
+    <h1 class='text-white text-center'>
+    Purifier.js
+    <br />
+    <span style='font-size: 18pt;'>ಠ_ಠ .... (╯°□°）╯︵ ┻━┻</span>
+      <div class='clear'></div>
+      <span>
+      <a href='http://ishmaelthedestroyer.com' target='_blank' style='display: inline-block;'>
+        <small>ishmaelthedestroyer.com</small>
+      </a>
+      <ul class='social-icons' style='display: inline-block;'>
+        <li>
+          <a href='http://twitter.com/IshmaelsAlive' target='_blank' class='social_twitter'></a>
+        </li>
+        <li>
+          <a href='http://github.com/ishmaelthedestroyer' target='_blank' class='social_github'></a>
+        </li>
+      </ul>
+      </span>
+    </h1>
+  </div>
+</div>
+
+<div class='clear-50'></div>
+
+<div class='container NO-PURIFY'>
+  <div class='row NO-PURIFY'>
+
+    <p class='lead'>About</p>
+
+    <p>Sometimes when you see something so <b>stupid</b> on the internet, you just want to throw it off the screen.
+    <br /><br />
+    <button id='ENABLER' class='btn btn-primary'>
+      Click Me
+    </button>
+
+    <p class='reveal text-large' style='font-weight: bold;'>
+      Now click anything on the screen. Try clicking the text below.
+      <br />
+      Click the DISABLE PURIFIER button in the top left when you're done.
+    </p>
+
+    <br /><br /><br />
+
+    <p class='reveal'>SOME STUPID TEXT</p>
+
+    <br /><br />
+
+    <p class='reveal'>SOME MORE STUPID TEXT</p>
+
+    <br /><br />
+
+    <img class='reveal' src='../example/assets/img/clown.jpg' />
+
+
+
+    <!--
+    The source code can be found at <a href='http://github.com/ishmaelthedestroyer/purifier.js' target='_blank'>http://github.com/ishmaelthedestroyer/purifier.js</a>
+    <br />
+    The demo can be found at <a href='http://taylor-editor.herokuapp.com' target='_blank'>http://taylor-editor.herokuapp.com</a>
+    <br /><br />
+    The beef of the source code (Coffeescript) can be found at <a href='https://github.com/ishmaelthedestroyer/taylor/blob/master/js/taylor.coffee' target='_blank'>https://github.com/ishmaelthedestroyer/taylor/blob/master/js/taylor.coffee</a>
+    <br />
+    The compiled source code (Javascript) can be found at <a href='https://github.com/ishmaelthedestroyer/taylor/blob/master/dist/js/taylor.js' target='_blank'>https://github.com/ishmaelthedestroyer/taylor/blob/master/dist/js/taylor.js</a></p>
+
+    <div class='clear-50'></div>
+    -->
+
+    <!--
+    <p class='lead'>TODO</p>
+
+    <ul>
+      <li>
+        <p>Documentation in the works.</p>
+      </li>
+      <li>
+        <p>Methods for importing + exporting text as well as utility functions for basic statistics.</p>
+      </li>
+      <li>
+        <p>Sticky utility bar that sticks to the top after scrolling past.</p>
+      </li>
+    </ul>
+    -->
+
+    <div class='clear-50'></div>
+    <script src='../src/purifier.js'></script>
+    <script>
+      window.DISABLE_PURIFIER();
+      document.getElementById('ENABLER').addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        this.style.display = 'none';
+
+        if (window.PURIFIER_ACTIVE) {
+          return false;
+        }
+
+        window.RUN_PURIFIER();
+
+        var hidden = document.getElementsByClassName('reveal');
+        for (var i = 0; i < hidden.length; i++) {
+          hidden[i].style.display = 'block';
+        }
+      }, false)
+    </script>
+</body>
+</html>
