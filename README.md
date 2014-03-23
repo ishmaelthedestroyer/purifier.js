@@ -2,9 +2,9 @@
 
 ಠ_ಠ .... (╯°□°）╯︵ ┻━┻
 <br /><br />
-Kick garbage off your screen. Bookmarklet.
+Kick garbage off your screen. Add it as a bookmarklet to purify your browsing experience.
 <br /><br />
-Source: dist/
+Source: <a href='https://github.com/ishmaelthedestroyer/purifier.js/blob/master/src/purifier.js'>src/purifier.js</a>
 
 #Notes
 Made with &lt;3 by <a href='http://ishmaelthedestroyer.com'>ishmael the destroyer</a><br />
