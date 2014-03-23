@@ -105,8 +105,6 @@ window.RUN_PURIFIER = function() {
 
         function animatePurifier() {
           setTimeout(function() {
-            console.log('Animating purifier.');
-
             purifierX += movePurifierX
             purifierY += movePurifierY
 
@@ -117,7 +115,6 @@ window.RUN_PURIFIER = function() {
               purifierY - targetY > 10 || purifierY - targetY < -10) {
                 animatePurifier();
             } else {
-              console.log('Making purifier invisible.')
               setTimeout(function() {
                 purifier.innerHTML = faces.flip;
                 positionElement()
@@ -145,7 +142,6 @@ window.RUN_PURIFIER = function() {
         var rotation = 0;
         function move() {
           setTimeout(function() {
-            console.log('Moving...');
             rotation += 15;
 
             element.style.webkitTransform = 'rotate(' + rotation + 'deg)';
