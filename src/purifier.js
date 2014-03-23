@@ -3,7 +3,7 @@ window.RUN_PURIFIER = function() {
     return false;
   }
 
-  window.PURIFIER_ACTIVE = false;
+  window.PURIFIER_ACTIVE = true;
 
   var faces = {
     disapproval: '&#3232;_&#3232;',
