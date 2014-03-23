@@ -2,7 +2,8 @@
 
 ಠ_ಠ .... (╯°□°）╯︵ ┻━┻
 <br /><br />
-Kick garbage off your screen. Add it as a bookmarklet to purify your browsing experience.
+Sometimes when you see something so <b>stupid</b> on the internet, you just want to throw it off the screen. <br />
+Well, now you can.
 <br /><br />
 Source: <a href='https://github.com/ishmaelthedestroyer/purifier.js/blob/master/src/purifier.js'>src/purifier.js</a>
 
