@@ -7,7 +7,7 @@ window.RUN_PURIFIER = function() {
 
   var faces = {
     disapproval: '&#3232;_&#3232;',
-    flip: '(&#9583;&#176;&#9633;&#176;&#65289;&#9583;&#65077;'
+    flip: '(&#9583;&#176;&#9633;&#176;&#65289;&#9583;'
   };
 
   var callbacks = [];
